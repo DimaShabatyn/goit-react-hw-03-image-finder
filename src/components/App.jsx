@@ -5,19 +5,19 @@ import fetchPixabay from 'services/fetchPixabay';
 import { Loader } from './Loader/Loader';
 import { ToastContainer, Slide } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { toast } from 'react-toastify';
+// import { toast } from 'react-toastify';
 const customId = 'custom-id-yes';
-const notifyOptions = {
-  position: 'top-right',
-  autoClose: 5000,
-  hideProgressBar: false,
-  closeOnClick: true,
-  pauseOnHover: true,
-  draggable: true,
-  progress: undefined,
-  theme: 'colored',
-  toastId: customId,
-};
+// const notifyOptions = {
+//   position: 'top-right',
+//   autoClose: 5000,
+//   hideProgressBar: false,
+//   closeOnClick: true,
+//   pauseOnHover: true,
+//   draggable: true,
+//   progress: undefined,
+//   theme: 'colored',
+//   toastId: customId,
+// };
 
 export default class App extends Component {
   state = {
