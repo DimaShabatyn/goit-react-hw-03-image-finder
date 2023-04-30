@@ -1,4 +1,5 @@
 // import SearchBar from './Searchbar.styled';
+import { HiMagnifyingGlass } from 'react-icons/hi2';
 import React, { Component } from 'react';
 import { toast } from 'react-toastify';
 // import PropTypes from 'prop-types';
@@ -39,7 +40,7 @@ export default class SearchBar extends Component {
       <header className="Searchbar">
         <form className="SearchForm" onSubmit={this.onSubmit}>
           <button type="submit" className="SearchForm-button">
-            <span className="SearchForm-button-label">Search</span>
+            <HiMagnifyingGlass size="24" />
           </button>
 
           <input

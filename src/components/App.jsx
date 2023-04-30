@@ -5,19 +5,8 @@ import fetchPixabay from 'services/fetchPixabay';
 import { Loader } from './Loader/Loader';
 import { ToastContainer, Slide } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-// import { toast } from 'react-toastify';
-const customId = 'custom-id-yes';
-// const notifyOptions = {
-//   position: 'top-right',
-//   autoClose: 5000,
-//   hideProgressBar: false,
-//   closeOnClick: true,
-//   pauseOnHover: true,
-//   draggable: true,
-//   progress: undefined,
-//   theme: 'colored',
-//   toastId: customId,
-// };
+import { Button } from './Button/Button';
+
 
 export default class App extends Component {
   state = {
@@ -108,9 +97,7 @@ export default class App extends Component {
           )}
           <ImageGallery images={images} />
           {images.length > 0 && !loading && page <= totalPages && (
-            <button className="Button" onClick={this.onLoadMore}>
-              Load More
-            </button>
+            <Button onClick={this.onLoadMore} />
           )}
         </div>
         <ToastContainer transition={Slide} draggablePercent={60} />
